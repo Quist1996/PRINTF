@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_int -This prints integers.
- * @dots:The arguments to print.
+i * @dots:The arguments to print.
  * Return: integer
  */
 int print_int(va_list dots)
@@ -37,7 +37,8 @@ int print_int(va_list dots)
 			exp = exp / 10;
 			i++;
 		}
-
-		putchar('0' + last);
-		return (i);
 	}
+	putchar('0' + last);
+	
+	return (i);
+}

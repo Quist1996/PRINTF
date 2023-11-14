@@ -9,6 +9,8 @@
 int printchar(va_list dots)
 {
 	char a = va_arg(dots, int);
+
 	putchar(a);
+
 	return (1);
 }

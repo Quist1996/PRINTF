@@ -6,7 +6,8 @@
  * Return: The length of the string.
  */
 
-int _printf(const char * const format, ...){
+int _printf(const char * const format, ...)
+{
 	con_match q[] = {
 		{"%c", printchar},
 		{"%s", printstr},
@@ -32,7 +33,7 @@ Here:
 		while (r >= 0)
 		{
 			if (q[r].identity[0] == format[i] && q[r].identity[1] == format[i + 1])
-			{	
+			{
 				len += q[r].funct(dots);
 				i = i + 2;
 				goto Here;
